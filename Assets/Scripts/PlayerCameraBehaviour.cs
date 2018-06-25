@@ -16,14 +16,9 @@ public class PlayerCameraBehaviour : MonoBehaviour
 
     void Update ()
     {
-        var interprolant = currentTime / totalTime; //get percentage. The percentage of how long it would take
         if (Input.GetButton("Fire2"))
         {
             currentTime = currentTime + Time.deltaTime;
-            if (currentTime >= totalTime)
-            {
-                currentTime = 0;
-            }
             fov = Mathf.MoveTowards(fov, newFov, currentTime);
             Camera.main.fieldOfView = fov;
         }
