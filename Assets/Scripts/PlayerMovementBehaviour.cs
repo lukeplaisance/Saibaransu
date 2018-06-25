@@ -12,18 +12,9 @@ public class PlayerMovementBehaviour : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 	}
 
-	// Update is called once per frame
-	void Update ()
+    // Update is called once per frame
+    void Update()
     {
-        if(gameObject.CompareTag("Player1"))
-        {
-            var movement = transform.position * Time.deltaTime;
-            rb.AddForce(movement * speed);
-        }
-        if(gameObject.CompareTag("Player2"))
-        {
-            var movement = -transform.position * Time.deltaTime;
-            rb.AddForce(movement * speed);
-        }
-	}
+        rb.AddForce(transform.forward * speed);
+    }
 }
