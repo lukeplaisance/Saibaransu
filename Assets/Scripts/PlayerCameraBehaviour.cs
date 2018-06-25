@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class PlayerCameraBehaviour : MonoBehaviour
 {
-    float fov = Camera.main.fieldOfView;
-    float start = 20.0f;
-    float end = 10.0f;
+    float fov;
+    float newFov = 10.0f;
     public float totalTime = 1;
     public float currentTime = 0;
 
-	void Update ()
+    void Start()
+    {
+        fov = Camera.main.fieldOfView;
+    }
+
+    void Update ()
     {
         var interprolant = currentTime / totalTime; //get percentage. The percentage of how long it would take
         if (Input.GetButton("Fire2"))
@@ -20,10 +24,8 @@ public class PlayerCameraBehaviour : MonoBehaviour
             {
                 currentTime = 0;
             }
-            fov = Mathf.Lerp(start, end, interprolant);
+            fov = Mathf.MoveTowards(fov, newFov, currentTime);
             Camera.main.fieldOfView = fov;
         }
-        else
-            return;
 	}
 }
