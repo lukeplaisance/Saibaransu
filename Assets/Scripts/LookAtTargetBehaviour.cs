@@ -5,15 +5,16 @@ using Cinemachine;
 
 public class LookAtTargetBehaviour : MonoBehaviour
 {
-    public Transform target;
     public CinemachineVirtualCameraBase vcam;
 
-    public void LookAt()
+    public void LookAt(Transform target)
     {
-        vcam.GetComponent<CinemachineVirtualCameraBase>();
+        vcam = GetComponent<CinemachineVirtualCameraBase>();
+        target = vcam.LookAt;
     }
-    public void Follow()
+    public void Follow(Transform target)
     {
-        vcam.GetComponent<CinemachineVirtualCameraBase>();
+        vcam = GetComponent<CinemachineVirtualCameraBase>();
+        target = vcam.Follow;
     }
 }
