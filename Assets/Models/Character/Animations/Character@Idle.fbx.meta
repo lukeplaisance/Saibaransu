@@ -80,6 +80,7 @@ ModelImporter:
     100144: Spine_04SHJnt
     100146: Spine_TopSHJnt
     100148: Zremeshed_BryanKeith:Group11198
+    100150: Rider
     400000: //RootNode
     400002: Head_JawEndSHJnt
     400004: Head_JawSHJnt
@@ -155,14 +156,17 @@ ModelImporter:
     400144: Spine_04SHJnt
     400146: Spine_TopSHJnt
     400148: Zremeshed_BryanKeith:Group11198
+    400150: Rider
     2100000: lambert1
     2100002: Lance_pCylinder9SG1
     4300000: Zremeshed_BryanKeith:Group11198
     4300002: Lance1
+    4300004: Rider
     7400000: Take 001
     9500000: //RootNode
     13700000: Lance1
     13700002: Zremeshed_BryanKeith:Group11198
+    13700004: Rider
   externalObjects: {}
   materials:
     importMaterials: 1
