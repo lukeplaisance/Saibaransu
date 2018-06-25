@@ -1,0 +1,266 @@
+fileFormatVersion: 2
+guid: 61e5cd4132ce9174d95e19a9f9de5e37
+timeCreated: 1529445028
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bike
+    100002: Bike_Body
+    100004: Bike_Body 1
+    100006: Bike_ExhaustPipe
+    100008: Bike_Front
+    100010: Bike_FrontTire
+    100012: Bike_HandleBar
+    100014: Bike_Rear
+    100016: Bike_RearTire
+    100018: //RootNode
+    100020: Motorcycle_Bike_Back_AuxSHJnt
+    100022: Motorcycle_Bike_body_AuxSHJnt
+    100024: Motorcycle_Bike_exhuast_AuxSHJnt
+    100026: Motorcycle_Bike_ExhuastEnd_AuxSHJnt
+    100028: Motorcycle_Bike_FrontSteeringPivot_AuxSHJnt
+    100030: Motorcycle_Bike_FrontWheel_AuxSHJnt
+    100032: Motorcycle_Bike_FrontWheelleft_AuxSHJnt
+    100034: Motorcycle_Bike_FrontWheelright_AuxSHJnt
+    100036: Motorcycle_Bike_RearLeft_AuxSHJnt
+    100038: Motorcycle_Bike_RearRight_AuxSHJnt
+    100040: Motorcycle_Bike_RearTire_AuxSHJnt
+    100042: Motorcycle_ROOTSHJnt
+    100044: polySurface24
+    100046: polySurface25
+    100048: polySurface26
+    100050: polySurface27
+    100052: polySurface28
+    100054: polySurface29
+    100056: polySurface30
+    100058: polySurface31
+    100060: Rig_of_Character_with_Bike_Scaled1:polySurface2
+    100062: Rig_of_Character_with_Bike_Scaled1:polySurface3
+    100064: Rig_of_Character_with_Bike_Scaled1:transform1
+    100066: Rig_of_Character_with_Bike_Scaled1:transform2
+    100068: Rig_of_Character_with_Bike_Scaled1:transform3
+    100070: Rig_of_Character_with_Bike_Scaled1:transform4
+    100072: Rig_of_Character_with_Bike_Scaled:group5
+    100074: Rig_of_Character_with_Bike_Scaled:pCylinder7
+    100076: Rig_of_Character_with_Bike_Scaled:polySurface13
+    100078: Rig_of_Character_with_Bike_Scaled:polySurface14
+    100080: Rig_of_Character_with_Bike_Scaled:polySurface15
+    100082: Rig_of_Character_with_Bike_Scaled:polySurface16
+    100084: Rig_of_Character_with_Bike_Scaled:polySurface17
+    100086: Rig_of_Character_with_Bike_Scaled:polySurface18
+    100088: Rig_of_Character_with_Bike_Scaled:polySurface2
+    100090: Rig_of_Character_with_Bike_Scaled:polySurface2 1
+    100092: Rig_of_Character_with_Bike_Scaled:polySurface20
+    100094: Rig_of_Character_with_Bike_Scaled:polySurface21
+    100096: Rig_of_Character_with_Bike_Scaled:polySurface4
+    100098: Rig_of_Character_with_Bike_Scaled:polySurface5
+    100100: Rig_of_Character_with_Bike_Scaled:polySurface6
+    100102: Rig_of_Character_with_Bike_Scaled:polySurface7
+    100104: Rig_of_Character_with_Bike_Scaled:polySurface8
+    100106: Rig_of_Character_with_Bike_Scaled:polySurface9
+    100108: Rig_of_Character_with_Bike_Scaled:transform10
+    100110: Rig_of_Character_with_Bike_Scaled:transform11
+    100112: Rig_of_Character_with_Bike_Scaled:transform12
+    100114: Rig_of_Character_with_Bike_Scaled:transform13
+    100116: Rig_of_Character_with_Bike_Scaled:transform14
+    100118: Rig_of_Character_with_Bike_Scaled:transform15
+    100120: Rig_of_Character_with_Bike_Scaled:transform16
+    100122: Rig_of_Character_with_Bike_Scaled:transform17
+    100124: Rig_of_Character_with_Bike_Scaled:transform18
+    100126: Rig_of_Character_with_Bike_Scaled:transform19
+    100128: Rig_of_Character_with_Bike_Scaled:transform7
+    100130: Rig_of_Character_with_Bike_Scaled:transform8
+    100132: Rig_of_Character_with_Bike_Scaled:transform9
+    100134: transform10
+    100136: transform11
+    100138: transform12
+    100140: transform13
+    100142: transform14
+    100144: transform15
+    100146: transform16
+    100148: transform17
+    100150: transform7
+    100152: transform8
+    100154: transform9
+    400000: Bike
+    400002: Bike_Body
+    400004: Bike_Body 1
+    400006: Bike_ExhaustPipe
+    400008: Bike_Front
+    400010: Bike_FrontTire
+    400012: Bike_HandleBar
+    400014: Bike_Rear
+    400016: Bike_RearTire
+    400018: //RootNode
+    400020: Motorcycle_Bike_Back_AuxSHJnt
+    400022: Motorcycle_Bike_body_AuxSHJnt
+    400024: Motorcycle_Bike_exhuast_AuxSHJnt
+    400026: Motorcycle_Bike_ExhuastEnd_AuxSHJnt
+    400028: Motorcycle_Bike_FrontSteeringPivot_AuxSHJnt
+    400030: Motorcycle_Bike_FrontWheel_AuxSHJnt
+    400032: Motorcycle_Bike_FrontWheelleft_AuxSHJnt
+    400034: Motorcycle_Bike_FrontWheelright_AuxSHJnt
+    400036: Motorcycle_Bike_RearLeft_AuxSHJnt
+    400038: Motorcycle_Bike_RearRight_AuxSHJnt
+    400040: Motorcycle_Bike_RearTire_AuxSHJnt
+    400042: Motorcycle_ROOTSHJnt
+    400044: polySurface24
+    400046: polySurface25
+    400048: polySurface26
+    400050: polySurface27
+    400052: polySurface28
+    400054: polySurface29
+    400056: polySurface30
+    400058: polySurface31
+    400060: Rig_of_Character_with_Bike_Scaled1:polySurface2
+    400062: Rig_of_Character_with_Bike_Scaled1:polySurface3
+    400064: Rig_of_Character_with_Bike_Scaled1:transform1
+    400066: Rig_of_Character_with_Bike_Scaled1:transform2
+    400068: Rig_of_Character_with_Bike_Scaled1:transform3
+    400070: Rig_of_Character_with_Bike_Scaled1:transform4
+    400072: Rig_of_Character_with_Bike_Scaled:group5
+    400074: Rig_of_Character_with_Bike_Scaled:pCylinder7
+    400076: Rig_of_Character_with_Bike_Scaled:polySurface13
+    400078: Rig_of_Character_with_Bike_Scaled:polySurface14
+    400080: Rig_of_Character_with_Bike_Scaled:polySurface15
+    400082: Rig_of_Character_with_Bike_Scaled:polySurface16
+    400084: Rig_of_Character_with_Bike_Scaled:polySurface17
+    400086: Rig_of_Character_with_Bike_Scaled:polySurface18
+    400088: Rig_of_Character_with_Bike_Scaled:polySurface2
+    400090: Rig_of_Character_with_Bike_Scaled:polySurface2 1
+    400092: Rig_of_Character_with_Bike_Scaled:polySurface20
+    400094: Rig_of_Character_with_Bike_Scaled:polySurface21
+    400096: Rig_of_Character_with_Bike_Scaled:polySurface4
+    400098: Rig_of_Character_with_Bike_Scaled:polySurface5
+    400100: Rig_of_Character_with_Bike_Scaled:polySurface6
+    400102: Rig_of_Character_with_Bike_Scaled:polySurface7
+    400104: Rig_of_Character_with_Bike_Scaled:polySurface8
+    400106: Rig_of_Character_with_Bike_Scaled:polySurface9
+    400108: Rig_of_Character_with_Bike_Scaled:transform10
+    400110: Rig_of_Character_with_Bike_Scaled:transform11
+    400112: Rig_of_Character_with_Bike_Scaled:transform12
+    400114: Rig_of_Character_with_Bike_Scaled:transform13
+    400116: Rig_of_Character_with_Bike_Scaled:transform14
+    400118: Rig_of_Character_with_Bike_Scaled:transform15
+    400120: Rig_of_Character_with_Bike_Scaled:transform16
+    400122: Rig_of_Character_with_Bike_Scaled:transform17
+    400124: Rig_of_Character_with_Bike_Scaled:transform18
+    400126: Rig_of_Character_with_Bike_Scaled:transform19
+    400128: Rig_of_Character_with_Bike_Scaled:transform7
+    400130: Rig_of_Character_with_Bike_Scaled:transform8
+    400132: Rig_of_Character_with_Bike_Scaled:transform9
+    400134: transform10
+    400136: transform11
+    400138: transform12
+    400140: transform13
+    400142: transform14
+    400144: transform15
+    400146: transform16
+    400148: transform17
+    400150: transform7
+    400152: transform8
+    400154: transform9
+    2100000: Rig_of_Character_with_Bike_Scaled_Exported_Bike_initialShadingGroup1
+    2100002: Rig_of_Character_with_Bike_Scaled_lambert2
+    2300000: Bike_Body 1
+    2300002: Bike_ExhaustPipe
+    2300004: Bike_Front
+    2300006: Bike_FrontTire
+    2300008: Bike_Rear
+    2300010: Bike_RearTire
+    3300000: Bike_Body 1
+    3300002: Bike_ExhaustPipe
+    3300004: Bike_Front
+    3300006: Bike_FrontTire
+    3300008: Bike_Rear
+    3300010: Bike_RearTire
+    4300000: Bike_RearTire
+    4300002: Bike_Rear
+    4300004: Bike_Body
+    4300006: Bike_Front
+    4300008: Bike_ExhaustPipe
+    4300010: Bike_HandleBar
+    4300012: Bike_FrontTire
+    9500000: //RootNode
+    13700000: Bike_HandleBar
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
