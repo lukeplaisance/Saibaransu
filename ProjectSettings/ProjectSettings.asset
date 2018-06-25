@@ -4,7 +4,6 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 14
-  productGUID: e2a78c3456528af4dbfda02daaa5a506
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
@@ -204,7 +203,6 @@ PlayerSettings:
   tvOSSmallIconLayers: []
   tvOSSmallIconLayers2x: []
   tvOSLargeIconLayers: []
-  tvOSLargeIconLayers2x: []
   tvOSTopShelfImageLayers: []
   tvOSTopShelfImageLayers2x: []
   tvOSTopShelfImageWideLayers: []
