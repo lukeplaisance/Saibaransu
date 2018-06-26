@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: 03b9d57f8b1098348a20adf1b99bb40a
+timeCreated: 1530028748
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bike_Front
+    100004: Bike_front
+    100006: Bike_Mid
+    100008: Bike_Rear
+    100010: Bike_rear
+    100012: Exhaust
+    100014: Front_Tire
+    100016: Motorcycle_Bike_AuxSHJnt
+    100018: Motorcycle_Bike_exhuast_AuxSHJnt
+    100020: Motorcycle_Bike_front_AuxSHJnt
+    100022: Motorcycle_Bike_front_tire_AuxSHJnt
+    100024: Motorcycle_Bike_rear_AuxSHJnt
+    100026: Motorcycle_Bike_rear_tire_AuxSHJnt
+    100028: Motorcycle_Bike_rearw_AuxSHJnt
+    100030: Motorcycle_ROOTSHJnt
+    100032: Rear_Tire
+    400000: //RootNode
+    400002: Bike_Front
+    400004: Bike_front
+    400006: Bike_Mid
+    400008: Bike_Rear
+    400010: Bike_rear
+    400012: Exhaust
+    400014: Front_Tire
+    400016: Motorcycle_Bike_AuxSHJnt
+    400018: Motorcycle_Bike_exhuast_AuxSHJnt
+    400020: Motorcycle_Bike_front_AuxSHJnt
+    400022: Motorcycle_Bike_front_tire_AuxSHJnt
+    400024: Motorcycle_Bike_rear_AuxSHJnt
+    400026: Motorcycle_Bike_rear_tire_AuxSHJnt
+    400028: Motorcycle_Bike_rearw_AuxSHJnt
+    400030: Motorcycle_ROOTSHJnt
+    400032: Rear_Tire
+    2100000: Rig_of_Character_with_Bike_Scaled_Exported_Bike_initialShadingGroup1
+    4300000: Exhaust
+    4300002: Bike_Mid
+    4300004: Bike_Front
+    4300006: Front_Tire
+    4300008: Bike_Rear
+    4300010: Rear_Tire
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Bike_Front
+    13700002: Bike_Mid
+    13700004: Bike_Rear
+    13700006: Exhaust
+    13700008: Front_Tire
+    13700010: Rear_Tire
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
