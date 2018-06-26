@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 87dbf0c15ce1af041b2577f6161050cf
-timeCreated: 1529439230
+guid: 8adfaccfc014c3d46b5fe21178af72d4
+timeCreated: 1529957858
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: CharacterProto
-    100002: //RootNode
-    100004: Head_JawEndSHJnt
-    100006: Head_JawSHJnt
-    100008: Head_TopSHJnt
+    100000: //RootNode
+    100002: Head_JawEndSHJnt
+    100004: Head_JawSHJnt
+    100006: Head_TopSHJnt
+    100008: Lance1
     100010: Left_Arm_ClavicleSHJnt
     100012: Left_Arm_ElbowSHJnt
     100014: Left_Arm_ShoulderSHJnt
@@ -79,11 +79,14 @@ ModelImporter:
     100142: Spine_03SHJnt
     100144: Spine_04SHJnt
     100146: Spine_TopSHJnt
-    400000: CharacterProto
-    400002: //RootNode
-    400004: Head_JawEndSHJnt
-    400006: Head_JawSHJnt
-    400008: Head_TopSHJnt
+    100148: Zremeshed_BryanKeith:Group11198
+    100150: Rider
+    100152: Character
+    400000: //RootNode
+    400002: Head_JawEndSHJnt
+    400004: Head_JawSHJnt
+    400006: Head_TopSHJnt
+    400008: Lance1
     400010: Left_Arm_ClavicleSHJnt
     400012: Left_Arm_ElbowSHJnt
     400014: Left_Arm_ShoulderSHJnt
@@ -153,10 +156,21 @@ ModelImporter:
     400142: Spine_03SHJnt
     400144: Spine_04SHJnt
     400146: Spine_TopSHJnt
+    400148: Zremeshed_BryanKeith:Group11198
+    400150: Rider
+    400152: Character
     2100000: lambert1
-    4300000: CharacterProto
+    2100002: Lance_pCylinder9SG1
+    4300000: Zremeshed_BryanKeith:Group11198
+    4300002: Lance1
+    4300004: Rider
+    4300006: Character
+    7400000: Take 001
     9500000: //RootNode
-    13700000: CharacterProto
+    13700000: Lance1
+    13700002: Zremeshed_BryanKeith:Group11198
+    13700004: Rider
+    13700006: Character
   externalObjects: {}
   materials:
     importMaterials: 1
