@@ -22,6 +22,15 @@ ModelImporter:
     100028: polySurface26
     100030: polySurface7
     100032: RoadKillOut.011
+    100034: Bike_Exhuast
+    100036: Bike_Front
+    100038: Bike_FrontTire
+    100040: Bike_Mid
+    100042: Bike_Mid 1
+    100044: Bike_Rear
+    100046: Bike_RearTire
+    100048: Bike_Windsheild
+    100050: Motorcycle
     400000: //RootNode
     400002: Motorcycle_Bike_AuxSHJnt
     400004: Motorcycle_Bike_exhuast_AuxSHJnt
@@ -39,13 +48,33 @@ ModelImporter:
     400028: polySurface26
     400030: polySurface7
     400032: RoadKillOut.011
+    400034: Bike_Exhuast
+    400036: Bike_Front
+    400038: Bike_FrontTire
+    400040: Bike_Mid
+    400042: Bike_Mid 1
+    400044: Bike_Rear
+    400046: Bike_RearTire
+    400048: Bike_Windsheild
+    400050: Motorcycle
     2100000: lambert1
+    2300000: Bike_Mid 1
+    2300002: Bike_Windsheild
+    3300000: Bike_Mid 1
+    3300002: Bike_Windsheild
     4300000: polySurface7
     4300002: polySurface10
     4300004: polySurface26
     4300006: polySurface25
     4300008: polySurface11
     4300010: polySurface22
+    4300012: Bike_RearTire
+    4300014: Bike_FrontTire
+    4300016: Bike_Exhuast
+    4300018: Bike_Front
+    4300020: Bike_Windsheild
+    4300022: Bike_Mid
+    4300024: Bike_Rear
     9500000: //RootNode
     13700000: polySurface10
     13700002: polySurface11
@@ -53,9 +82,14 @@ ModelImporter:
     13700006: polySurface25
     13700008: polySurface26
     13700010: polySurface7
+    13700012: Bike_Exhuast
+    13700014: Bike_Front
+    13700016: Bike_FrontTire
+    13700018: Bike_Rear
+    13700020: Bike_RearTire
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
