@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerCameraBehaviour : MonoBehaviour
 {
+    private Transform trigger;
+    private Transform camera;
     float fov;
     float newFov = 10.0f;
     public float totalTime = 1;
