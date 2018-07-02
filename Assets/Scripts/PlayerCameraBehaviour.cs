@@ -4,25 +4,23 @@ using UnityEngine;
 
 public class PlayerCameraBehaviour : MonoBehaviour
 {
-    private Transform trigger;
-    private Transform camera;
-    float fov;
-    float newFov = 10.0f;
-    public float totalTime = 1;
+    public GameObject bike;
     public float currentTime = 0;
+    public float totalTime = 1;
 
     void Start()
     {
-        fov = Camera.main.fieldOfView;
     }
 
-    void Update ()
+    void OnTriggerEnter(Collider other)
     {
-        if (Input.GetButton("Fire2"))
+        var interprolent = currentTime / totalTime;
+        while (Camera.main.transform.position != bike.transform.position)
         {
-            currentTime = currentTime + Time.deltaTime;
-            fov = Mathf.MoveTowards(fov, newFov, currentTime);
-            Camera.main.fieldOfView = fov;
+            if (other.gameObject.CompareTag("MiddleArea"))
+            {
+                Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, bike.transform.position, interprolent);
+            }
         }
 	}
 }
