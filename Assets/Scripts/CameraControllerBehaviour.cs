@@ -5,17 +5,32 @@ using UnityEngine;
 public class CameraControllerBehaviour : MonoBehaviour
 {
     public GameObject player;
-    public Vector3 offset;
+    public bool isFirstPerson;
+    public bool isThirdPerson;
+    public GameObject camera;
+    CameraControllerBehaviour cc;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
-        offset = transform.position - player.transform.position;
+        cc = GetComponent<CameraControllerBehaviour>();
 	}
-	
-	// Update is called once per frame
-	void LateUpdate ()
+
+    public void POVEvents()
     {
-        //transform.position = player.transform.position;
-	}
+        if (isFirstPerson)
+        {
+            camera.transform.position = Vector3.Lerp(camera.transform.position, player.transform.position, Time.deltaTime * 20);
+        }
+    }
+
+    void Update()
+    {
+        camera.transform.parent = player.transform;
+        if (Input.GetButton("Fire2"))
+        {
+            isFirstPerson = true;
+            camera.transform.position = player.transform.position;
+        }
+    }
 }
