@@ -20,7 +20,7 @@ public class Reticle1Behaviour : MonoBehaviour
 
         if (Input.GetButton("Horizontal") && Input.GetAxis("Horizontal") > 0)
         {
-            if (transform.localPosition.x + 50 <= -objectRectTransform.rect.width / 2)
+            if (transform.localPosition.x + 50 <= objectRectTransform.rect.width / 2)
             {
                 transform.position += new Vector3(speed, 0, 0);
             }
@@ -28,7 +28,7 @@ public class Reticle1Behaviour : MonoBehaviour
 
         if (Input.GetButton("Horizontal") && Input.GetAxis("Horizontal") < 0)
         {
-            if (transform.localPosition.x >= objectRectTransform.rect.width / 2)
+            if (transform.localPosition.x >= -objectRectTransform.rect.width / 2)
             {
                 transform.position += new Vector3(-speed, 0, 0);
             }
@@ -44,7 +44,7 @@ public class Reticle1Behaviour : MonoBehaviour
 
         if (Input.GetButton("Vertical") && Input.GetAxis("Vertical") > 0)
         {
-            if (transform.localPosition.y + 50 <= objectRectTransform.rect.height / 2)
+            if (transform.localPosition.y + 35 <= objectRectTransform.rect.height / 2)
             {
                 transform.position += new Vector3(0, speed, 0);
             }
