@@ -351,7 +351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4612356614335092}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Player2Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1384,7 +1384,7 @@ GameObject:
   - component: {fileID: 54214020520086902}
   - component: {fileID: 114521495542770904}
   m_Layer: 0
-  m_Name: Bike1
+  m_Name: Bike2
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2148,9 +2148,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1945796667204166}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.19, y: 7.085961, z: -30.39}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -20, y: 20, z: -250}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4049751964660062}
   - {fileID: 4828770558682484}
@@ -2162,7 +2162,7 @@ Transform:
   - {fileID: 4612356614335092}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4608247263956928
 Transform:
   m_ObjectHideFlags: 1
