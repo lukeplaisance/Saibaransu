@@ -1,21 +1,20 @@
 fileFormatVersion: 2
-guid: e5b96a01ea76f1f43ac0eb346660c3f8
-timeCreated: 1528825721
+guid: 23648f01492e98a44819c821e76a4577
+timeCreated: 1530645186
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert5
+    2100000: lambert1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: NeutralArea
-    4300002: NeutralArea_Mesh:NeutralArea
+    4300000: CenterStage_Mesh
     9500000: //RootNode
   externalObjects: {}
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
