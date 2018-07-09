@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class CollisionAreaBehaviour : MonoBehaviour
 {
-    TimeManagerBehaviour timeManager;
+    public TimeManagerBehaviour timeManager;
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if(other != null)
         {
-            timeManager.SlowDown();
+            if (other.gameObject.tag == "Player")
+            {
+                Debug.Log("bike hit");
+                timeManager.SlowDown();
+            }
+            else
+                return;
         }
+        
     }
 
 }
