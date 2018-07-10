@@ -9,7 +9,7 @@ public class CameraControllerBehaviour : MonoBehaviour
     private void Update()
     {
         camera.transform.parent = player.transform;
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButton("Fire2"))
         {
             isFirstPerson = true;
             camera.transform.position = Vector3.Lerp(camera.transform.position, player.transform.position, Time.deltaTime * 10);
