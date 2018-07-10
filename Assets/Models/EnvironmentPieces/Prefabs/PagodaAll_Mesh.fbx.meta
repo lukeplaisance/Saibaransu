@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e64c150348e331a49b91f577673e2e63
-timeCreated: 1528306442
+timeCreated: 1530568756
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -61,7 +61,7 @@ ModelImporter:
     9500000: //RootNode
   externalObjects: {}
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
