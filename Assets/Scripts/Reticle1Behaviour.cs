@@ -9,8 +9,6 @@ public class Reticle1Behaviour : MonoBehaviour
     public Camera camera;
     private RaycastHit hit;
     private Ray ray;
-    private Vector3 rayOrigin;
-    private Vector3 rayOrigin2;
 
     void Start ()
 	{
@@ -21,8 +19,6 @@ public class Reticle1Behaviour : MonoBehaviour
 
     void Update ()
     {
-        ray = camera.ViewportPointToRay(transform.localPosition);
-
         if (Input.GetButton("P1Horizontal") && Input.GetAxis("P1Horizontal") > 0)
         {
             if (transform.localPosition.x + 50 <= objectRectTransform.rect.width / 2)
@@ -55,6 +51,8 @@ public class Reticle1Behaviour : MonoBehaviour
             }
         }
 
+        ray = camera.ViewportPointToRay(transform.localPosition);
+
         if (Input.GetButton("P1Fire1"))
         {
             //if (!fired)
@@ -62,7 +60,6 @@ public class Reticle1Behaviour : MonoBehaviour
             //    fired = true;
             Debug.DrawRay(ray.origin, transform.forward * 200, Color.green, 5.0f);
             Debug.Log(ray.origin);
-            Debug.Log(hit.collider);
             if (Physics.Raycast(ray, out hit))
             {
                 if (hit.collider)

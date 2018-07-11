@@ -428,6 +428,11 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 435111640}
+    - target: {fileID: 20782585153409158, guid: a99be706bcf26854d81ddead51d8c166,
+        type: 2}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a99be706bcf26854d81ddead51d8c166, type: 2}
   m_IsPrefabParent: 0
@@ -629,7 +634,7 @@ Prefab:
     - target: {fileID: 114521495542770904, guid: 1fcf10f84ed0065448bef82a07e1ef95,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fcf10f84ed0065448bef82a07e1ef95, type: 2}
@@ -711,7 +716,7 @@ Prefab:
     - target: {fileID: 114521495542770904, guid: ea6ec9150a54d9647bb2c7aa7ad47e68,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea6ec9150a54d9647bb2c7aa7ad47e68, type: 2}
