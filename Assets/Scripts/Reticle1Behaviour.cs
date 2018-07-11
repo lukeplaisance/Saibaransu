@@ -60,10 +60,9 @@ public class Reticle1Behaviour : MonoBehaviour
             //if (!fired)
             //{
             //    fired = true;
-            Debug.DrawRay(ray.origin, ray.direction* 20, Color.green, 5.0f);
-            Debug.Log(transform.localPosition);
+            Debug.DrawRay(ray.origin, transform.forward * 200, Color.green, 5.0f);
+            Debug.Log(ray.origin);
             Debug.Log(hit.collider);
-            ray.direction = -transform.forward;
             if (Physics.Raycast(ray, out hit))
             {
                 if (hit.collider)
