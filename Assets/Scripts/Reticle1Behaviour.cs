@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Security.Policy;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Reticle1Behaviour : MonoBehaviour
 {
@@ -10,9 +6,12 @@ public class Reticle1Behaviour : MonoBehaviour
     private RectTransform objectRectTransform;
     public float speed = .01f;
     private bool fired = false;
+    public Camera camera;
     private RaycastHit hit;
     private Ray ray;
-    public Camera camera;
+    private Vector3 rayOrigin;
+    private Vector3 rayOrigin2;
+
     void Start ()
 	{
         UI = GameObject.Find("Canvas");
@@ -22,8 +21,7 @@ public class Reticle1Behaviour : MonoBehaviour
 
     void Update ()
     {
-
-        ray = camera.ScreenPointToRay(objectRectTransform.position);
+        ray = camera.ViewportPointToRay(transform.localPosition);
 
         if (Input.GetButton("P1Horizontal") && Input.GetAxis("P1Horizontal") > 0)
         {
@@ -62,12 +60,15 @@ public class Reticle1Behaviour : MonoBehaviour
             //if (!fired)
             //{
             //    fired = true;
-                if (Physics.Raycast(ray, out hit/*transform.forward, out hit*/))
-                {
-                    if (hit.collider)
+            Debug.DrawRay(ray.origin, ray.direction* 20, Color.green, 5.0f);
+            Debug.Log(transform.localPosition);
+            Debug.Log(hit.collider);
+            ray.direction = -transform.forward;
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.collider)
                     {
                         Debug.Log("Ray Hit" + hit.collider.name);
-                        Debug.DrawRay(objectRectTransform.position, transform.forward, Color.green);
                     }
                 }
             //}
