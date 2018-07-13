@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public float m_NumRounds = 3f;
     public float m_StartDelay = 3f;
     public float m_EndDelay = 3f;
+    public GameObject m_CameraOnePrefab;
+    public GameObject m_CameraTwoPrefab;
     public CameraControllerBehaviour m_CameraOne;
     public CameraControllerBehaviour m_CameraTwo;
     public GameObject m_BikeOnePrefab;
@@ -34,6 +36,11 @@ public class GameManager : MonoBehaviour
         SpawnAllBikes();
 	}
 
+    private void SpawnAllCameras()
+    {
+        //m_CameraOne = Instantiate(m_CameraOnePrefab, m_CameraOne.transform.parent, Quaternion.identity) as GameObject;
+    }
+
     private void SpawnAllBikes()
     {
         m_SpawnedBikeOne = Instantiate(m_BikeOnePrefab, m_BikeOne.m_SpawnPoint.position, Quaternion.identity) as GameObject;
@@ -52,7 +59,7 @@ public class GameManager : MonoBehaviour
 
         if(m_GameWinner != null)
         {
-            SceneManager.LoadScene("99.Luke");
+            SceneManager.LoadScene("Luke");
         }
         else
         {

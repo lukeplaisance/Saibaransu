@@ -8,7 +8,7 @@ public class CameraControllerBehaviour : MonoBehaviour
 
     private void Update()
     {
-        //camera.transform.parent = player.transform;
+        camera.transform.parent = player.transform;
         if (Input.GetButton("Fire2"))
         {
             isFirstPerson = true;
