@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
+    [HideInInspector]
+    BikeManager Bike;
 
 	// Use this for initialization
 	void Start ()
@@ -16,13 +19,14 @@ public class GameManager : MonoBehaviour {
     {
 	    if(Input.GetButton("Fire1"))
         {
-            LoadScene("Luke");
+            LoadScene();
         }	
 	}
 
-    public void LoadScene(string name)
+    public void LoadScene()
     {
         Debug.Log("scene load" + name);
-        SceneManager.LoadScene(name);
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 }

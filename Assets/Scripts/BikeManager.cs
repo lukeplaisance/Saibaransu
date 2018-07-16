@@ -31,11 +31,4 @@ public class BikeManager
         m_Movement.enabled = true;
         m_Camera.enabled = true;
     }
-
-    public void Reset()
-    {
-        m_Instance.transform.position = m_SpawnPoint.position;
-        m_Instance.SetActive(true);
-        m_Instance.SetActive(false);
-    }
 }
