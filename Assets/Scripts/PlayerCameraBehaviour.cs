@@ -4,28 +4,24 @@ using UnityEngine;
 
 public class PlayerCameraBehaviour : MonoBehaviour
 {
-    float fov;
-    float newFov = 10.0f;
-    public float totalTime = 1;
+    public GameObject bike;
     public float currentTime = 0;
+    public float totalTime = 1;
+    public GameObject camera;
 
     void Start()
     {
-        fov = Camera.main.fieldOfView;
     }
 
-    void Update ()
+    void OnTriggerEnter(Collider other)
     {
-        var interprolant = currentTime / totalTime; //get percentage. The percentage of how long it would take
-        if (Input.GetButton("Fire2"))
+        if (!other.gameObject.CompareTag("MiddleArea"))
+            return;
+
+        while (Vector3.Distance(Camera.main.transform.position, bike.transform.position) > 1f)
         {
-            currentTime = currentTime + Time.deltaTime;
-            if (currentTime >= totalTime)
-            {
-                currentTime = 0;
-            }
-            fov = Mathf.MoveTowards(fov, newFov, currentTime);
-            Camera.main.fieldOfView = fov;
+            Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, bike.transform.position, Time.deltaTime * 50);
         }
+        camera.transform.position = bike.transform.position;
 	}
 }
