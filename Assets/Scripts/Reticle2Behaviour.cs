@@ -2,46 +2,45 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 
-public class Reticle2Behaviour : MonoBehaviour {
-    public float speed = .01f;
-    private GameObject UI;
-    private RectTransform objectRectTransform;
+public class Reticle2Behaviour : MonoBehaviour
+{
+    private RaycastHit hit;
+    private Ray ray;
+    private bool fired;
+    private bool active;
+    public Image image;
 
-    void Start () {
-        UI = GameObject.Find("Canvas");
-        objectRectTransform = UI.GetComponent<RectTransform>();
+    void Start ()
+    {
+        ray = new Ray();
+        image.enabled = false;
+        fired = false;
+        active = false;
     }
 	
-	void Update () {
-        if (Input.GetButton("P2Horizontal") && Input.GetAxis("P2Horizontal") > 0)
+	void Update ()
+	{
+	    if (Input.GetButton("Fire2"))
+	    {
+	        image.enabled = true;
+	        active = true;
+	    }
+
+        if (Input.GetButton("P2Fire1") && !fired && active)
         {
-            if (transform.localPosition.x + 25 <= objectRectTransform.rect.width / 2)
-            {
-                transform.position += new Vector3(-speed, 0, 0);
-            }
-        }
-        if (Input.GetButton("P2Horizontal") && Input.GetAxis("P2Horizontal") < 0)
-        {
-            if (transform.localPosition.x - 25 >= -objectRectTransform.rect.width / 2)
-            {
-                transform.position += new Vector3(speed, 0, 0);
-            }
-        }
-        if (Input.GetButton("P2Vertical") && Input.GetAxis("P2Vertical") < 0)
-        {
-            if (transform.localPosition.y - 20 >= -objectRectTransform.rect.height / 2)
-            {
-                transform.position += new Vector3(0, -speed, 0);
-            }
-        }
-        if (Input.GetButton("P2Vertical") && Input.GetAxis("P2Vertical") > 0)
-        {
-            if (transform.localPosition.y + 35 <= objectRectTransform.rect.height / 2)
-            {
-                transform.position += new Vector3(0, speed, 0);
-            }
-        }
+	        fired = true;
+	        ray = new Ray(gameObject.transform.position, gameObject.transform.forward);
+	        Debug.DrawRay(ray.origin, transform.forward * 999, Color.green, 5.0f);
+	        if (Physics.Raycast(ray, out hit))
+	        {
+	            if (hit.collider)
+	            {
+	                Debug.Log("Ray hit " + hit.collider.name);
+	            }
+	        }
+	    }
     }
 }
