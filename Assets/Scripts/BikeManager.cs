@@ -4,10 +4,8 @@ using UnityEngine;
 using System;
 
 [Serializable]
-public class BikeManager
+public class BikeManager : MonoBehaviour
 {
-    public Transform m_SpawnPoint;
-    [HideInInspector]
     public GameObject m_Instance;
     [HideInInspector]
     public int m_RoundWin;
