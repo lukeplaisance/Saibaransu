@@ -11,22 +11,27 @@ public class GameManager : MonoBehaviour
     public float m_EndDelay = 3f;
     private WaitForSeconds m_StartWait;
     private WaitForSeconds m_EndWait;
-    private BikeManager m_Bike;
+    //this was confusing-luke
+    //but watch
+    [SerializeField]
+    private List<BikeManager> m_Bikes;
 
     private int m_RoundNumber;
     private BikeManager m_RoundWinner;
     private BikeManager m_GameWinner;
     private bool m_WasHit = false;
 
-	// Use this for initialization
-	void Start ()
+    //the gamemanger is responsible for enabling and disabling the bikes
+    //if we only have one reference to a bike ex: m_bike we can only control one
+    //let's use a list of bikemanager and control them that way
+
+    // Use this for initialization
+    void Start()
     {
         m_StartWait = new WaitForSeconds(m_StartDelay);
         m_EndWait = new WaitForSeconds(m_EndDelay);
-        m_Bike = GetComponent<BikeManager>();
-
         StartCoroutine(GameLoop());
-	}
+    }
 
     private IEnumerator GameLoop()
     {
@@ -90,12 +95,15 @@ public class GameManager : MonoBehaviour
 
     private void EnableBikeControl()
     {
-        m_Bike.EnableControls();
+        foreach (var bike in m_Bikes)
+        {
+            bike.EnableControls();
+        }
     }
 
     private void DisableBikeControl()
     {
-        m_Bike.DisableControls();
+        m_Bikes.ForEach(bike => bike.DisableControls());
     }
 
     public void LoadScene()
@@ -103,5 +111,5 @@ public class GameManager : MonoBehaviour
         Debug.Log("scene load" + name);
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
-    }        
+    }
 }
