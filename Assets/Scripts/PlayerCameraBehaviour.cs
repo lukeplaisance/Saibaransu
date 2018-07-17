@@ -11,6 +11,7 @@ public class PlayerCameraBehaviour : MonoBehaviour
 
     void Start()
     {
+     
     }
 
     void OnTriggerEnter(Collider other)
