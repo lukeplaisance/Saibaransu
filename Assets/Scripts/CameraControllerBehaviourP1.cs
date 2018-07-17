@@ -8,16 +8,10 @@ public class CameraControllerBehaviourP1 : MonoBehaviour
     public GameObject camera;
     private float rotationSpeed = 10;
 
-
-    void Start()
-    {
-
-    }
-
     private void Update()
     {
         camera.transform.parent = player.transform;
-        if (Input.GetButton("Fire2"))
+        if (Input.GetButton("P1Fire2"))
         {
             isFirstPerson = true;
             camera.transform.position =

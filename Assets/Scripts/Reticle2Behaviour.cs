@@ -23,7 +23,7 @@ public class Reticle2Behaviour : MonoBehaviour
 	
 	void Update ()
 	{
-	    if (Input.GetButton("Fire2"))
+	    if (Input.GetButton("P2Fire2"))
 	    {
 	        image.enabled = true;
 	        active = true;

@@ -20,7 +20,7 @@ public class Reticle1Behaviour : MonoBehaviour
 
     void Update ()
     {
-        if (Input.GetButton("Fire2"))
+        if (Input.GetButton("P1Fire2"))
         {
             image.enabled = true;
             active = true;
@@ -36,6 +36,10 @@ public class Reticle1Behaviour : MonoBehaviour
                 if (hit.collider)
                 {
                     Debug.Log("Ray hit " + hit.collider.name);
+                }
+                else
+                {
+                    Debug.Log("Attack Missed");
                 }
             }
         }
