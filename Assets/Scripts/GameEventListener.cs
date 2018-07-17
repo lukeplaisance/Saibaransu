@@ -8,11 +8,21 @@ public class GameEventListener : MonoBehaviour
 
     public GameEvent Event;
 
-    private UnityEvent Response;
+    private UnityEvent Response = new UnityEvent();
 
     public void OnEventRaised()
     {
         Response.Invoke();
+    }
+
+    private void Start()
+    {
+        Response.AddListener(Output);
+    }
+
+    public void Output()
+    {
+        Debug.Log("Event Triggered");
     }
 
 }
