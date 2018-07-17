@@ -283,6 +283,10 @@ Prefab:
       propertyPath: m_Center.z
       value: 1.0063192
       objectReference: {fileID: 0}
+    - target: {fileID: 1440899653640588, guid: 7cca81eca73fcd44187db57544507207, type: 2}
+      propertyPath: m_Name
+      value: HeadColliders
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7cca81eca73fcd44187db57544507207, type: 2}
   m_IsPrefabParent: 0
@@ -661,7 +665,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: a560712ebb9388a4d95652bde442e7a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.88
+      value: -20.29
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a560712ebb9388a4d95652bde442e7a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -730,6 +734,10 @@ Prefab:
     - target: {fileID: 400000, guid: a560712ebb9388a4d95652bde442e7a1, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a560712ebb9388a4d95652bde442e7a1, type: 3}
+      propertyPath: m_Name
+      value: Bike1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a560712ebb9388a4d95652bde442e7a1, type: 3}
