@@ -7,53 +7,67 @@
 
 public class CameraControllerBehaviour : MonoBehaviour
 {
-    
+
     [Header("Input Values")]
+    [SerializeField]
+    private string _horizontalinput = "P1Horizontal";
     [SerializeField]
     private string _verticalinput = "P1Vertical";
     [SerializeField]
-    private string _fireinput = "P1Fire2";
+    private string _fireinput1 = "P1Fire2";
     [SerializeField]
-    private string _horizontalinput = "P1Horizontal";
+    private string _fireinput2 = "P1Fire1";
 
+    [Header("Events")]
+    [SerializeField]
+    private GameEvent InputFire1;
+    [SerializeField]
+    private GameEvent InputFire2;
     
+
+    [SerializeField]
+    private GameEvent OnFirstPersonSwitch;
+
 
     [Header("Camera Values")]
     [SerializeField]
     private Transform _player;
     [SerializeField]
     private float _rotationSpeed = 10;
-
     private bool _isFirstPerson;
+    [SerializeField]
     private Camera _camera;
+
     private void Start()
     {
         _camera = GetComponent<Camera>();
-    }
 
+    }
+    
     private void Update()
     {
-        _camera.transform.parent = _player;
-        if (Input.GetButton(_fireinput))
+        if (Input.GetButtonDown(_fireinput1))
         {
-            _isFirstPerson = true;
-            _camera.transform.position =
-                Vector3.Lerp(_camera.transform.position, _player.position, Time.deltaTime * 10);
+            InputFire1.Raise();
         }
 
-        if (_isFirstPerson)
+        if (Input.GetButtonDown(_fireinput2))
         {
-            if (Input.GetButton(_horizontalinput) && Input.GetAxis(_horizontalinput) > 0)
-                transform.Rotate(0, _rotationSpeed * Time.deltaTime, 0f);
-
-            if (Input.GetButton(_horizontalinput) && Input.GetAxis(_horizontalinput) < 0)
-                transform.Rotate(0, -_rotationSpeed * Time.deltaTime, 0f);
-
-            if (Input.GetButton(_verticalinput) && Input.GetAxis(_verticalinput) < 0)
-                transform.Rotate(_rotationSpeed * Time.deltaTime, 0, 0f);
-
-            if (Input.GetButton(_verticalinput) && Input.GetAxis(_verticalinput) > 0)
-                transform.Rotate(-_rotationSpeed * Time.deltaTime, 0, 0f);
+            InputFire2.Raise();
         }
+
+        //ToDo: make a vector for rotation and change that
+        if (Input.GetAxis(_horizontalinput) > 0)
+            _camera.transform.Rotate(0, _rotationSpeed * Time.deltaTime, 0f);
+
+        if (Input.GetAxis(_horizontalinput) < 0)
+            _camera.transform.Rotate(0, -_rotationSpeed * Time.deltaTime, 0f);
+
+        if (Input.GetAxis(_verticalinput) < 0)
+            _camera.transform.Rotate(_rotationSpeed * Time.deltaTime, 0, 0f);
+
+        if (Input.GetAxis(_verticalinput) > 0)
+            _camera.transform.Rotate(-_rotationSpeed * Time.deltaTime, 0, 0f);
+
     }
 }

@@ -13,7 +13,7 @@ public class GameEvent : ScriptableObject
         listeners.Add(listener);
     }
 
-    public void UnScubsribe(GameEventListener listener)
+    public void UnSubscribe(GameEventListener listener)
     {
         listeners.Remove(listener);
     }
