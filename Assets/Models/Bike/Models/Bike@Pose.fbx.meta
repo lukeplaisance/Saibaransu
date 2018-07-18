@@ -22,6 +22,14 @@ ModelImporter:
     100028: Motorcycle_Bike_rearw_AuxSHJnt
     100030: Motorcycle_ROOTSHJnt
     100032: Rear_Tire
+    100034: Bike_Exhuast
+    100036: Bike_FrontTire
+    100038: Bike_Mid 1
+    100040: Bike_RearTire
+    100042: Bike_Windsheild
+    100044: Motorcycle
+    100046: Motorcycle_SHJntGrp
+    100048: RoadKillOut.011
     400000: //RootNode
     400002: Bike_Front
     400004: Bike_front
@@ -39,13 +47,30 @@ ModelImporter:
     400028: Motorcycle_Bike_rearw_AuxSHJnt
     400030: Motorcycle_ROOTSHJnt
     400032: Rear_Tire
+    400034: Bike_Exhuast
+    400036: Bike_FrontTire
+    400038: Bike_Mid 1
+    400040: Bike_RearTire
+    400042: Bike_Windsheild
+    400044: Motorcycle
+    400046: Motorcycle_SHJntGrp
+    400048: RoadKillOut.011
     2100000: Rig_of_Character_with_Bike_Scaled_Exported_Bike_initialShadingGroup1
+    2100002: lambert1
+    2300000: Bike_Mid 1
+    2300002: Bike_Windsheild
+    3300000: Bike_Mid 1
+    3300002: Bike_Windsheild
     4300000: Exhaust
     4300002: Bike_Mid
     4300004: Bike_Front
     4300006: Front_Tire
     4300008: Bike_Rear
     4300010: Rear_Tire
+    4300012: Bike_RearTire
+    4300014: Bike_FrontTire
+    4300016: Bike_Exhuast
+    4300018: Bike_Windsheild
     7400000: Take 001
     9500000: //RootNode
     13700000: Bike_Front
@@ -54,6 +79,9 @@ ModelImporter:
     13700006: Exhaust
     13700008: Front_Tire
     13700010: Rear_Tire
+    13700012: Bike_Exhuast
+    13700014: Bike_FrontTire
+    13700016: Bike_RearTire
   externalObjects: {}
   materials:
     importMaterials: 1
