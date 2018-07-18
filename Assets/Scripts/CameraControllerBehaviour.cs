@@ -7,28 +7,8 @@
 
 public class CameraControllerBehaviour : MonoBehaviour
 {
-
-    [Header("Input Values")]
     [SerializeField]
-    private string _horizontalinput = "P1Horizontal";
-    [SerializeField]
-    private string _verticalinput = "P1Vertical";
-    [SerializeField]
-    private string _fireinput1 = "P1Fire2";
-    [SerializeField]
-    private string _fireinput2 = "P1Fire1";
-
-    [Header("Events")]
-    [SerializeField]
-    private GameEvent InputFire1;
-    [SerializeField]
-    private GameEvent InputFire2;
-    
-
-    [SerializeField]
-    private GameEvent OnFirstPersonSwitch;
-
-
+    private PlayerConfig config;
     [Header("Camera Values")]
     [SerializeField]
     private Transform _player;
@@ -40,33 +20,33 @@ public class CameraControllerBehaviour : MonoBehaviour
 
     private void Start()
     {
-        _camera = GetComponent<Camera>();
+        //_camera = GetComponent<Camera>();
 
     }
-    
+
     private void Update()
     {
-        if (Input.GetButtonDown(_fireinput1))
+        if (Input.GetButtonDown(config._fireinput1))
         {
-            InputFire1.Raise();
+            config.InputFire1.Raise();
         }
 
-        if (Input.GetButtonDown(_fireinput2))
+        if (Input.GetButtonDown(config._fireinput2))
         {
-            InputFire2.Raise();
+            config.InputFire2.Raise();
         }
 
         //ToDo: make a vector for rotation and change that
-        if (Input.GetAxis(_horizontalinput) > 0)
+        if (Input.GetAxis(config._horizontalinput) > 0)
             _camera.transform.Rotate(0, _rotationSpeed * Time.deltaTime, 0f);
 
-        if (Input.GetAxis(_horizontalinput) < 0)
+        if (Input.GetAxis(config._horizontalinput) < 0)
             _camera.transform.Rotate(0, -_rotationSpeed * Time.deltaTime, 0f);
 
-        if (Input.GetAxis(_verticalinput) < 0)
+        if (Input.GetAxis(config._verticalinput) < 0)
             _camera.transform.Rotate(_rotationSpeed * Time.deltaTime, 0, 0f);
 
-        if (Input.GetAxis(_verticalinput) > 0)
+        if (Input.GetAxis(config._verticalinput) > 0)
             _camera.transform.Rotate(-_rotationSpeed * Time.deltaTime, 0, 0f);
 
     }
