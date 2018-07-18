@@ -1,0 +1,387 @@
+fileFormatVersion: 2
+guid: 8dce27b9ec371174880e9d1e9b2e230e
+timeCreated: 1531953686
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: StaticScreenTransparent_Icon
+    21300002: BlueBarMedium_Icon
+    21300004: BlueBarMediumTransparent_Icon
+    21300006: BoarderSmall_Icon
+    21300008: PinkBarSmall_Icon
+    21300010: BoarderLarge_Icon
+    21300012: BlueBarLarge_Icon
+    21300014: GameTitle_Icon
+    21300016: AimReticleBlueMidRing_Icon
+    21300018: AlternatePlayerPendingWin_Icon
+    21300020: BlueCircleOpen_Icon
+    21300022: PinkCircleFull_Icon
+    21300024: AimReticlePink_Icon
+    21300026: PlayerOneWin_Icon
+    21300028: PlayerTwoWin_Icon
+    21300030: PlayerPendingWin_Icon
+    21300032: PlayerDraw_Icons
+    21300034: AimReticleBlueOuterRing_Icon
+    21300036: AimReticleBlueInnerRing_Icon
+    21300038: RoundedBlueBox_Icon
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: StaticScreenTransparent_Icon
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1064
+        width: 444
+        height: 444
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueBarMedium_Icon
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1387
+        width: 165
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueBarMediumTransparent_Icon
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1387
+        width: 168
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BoarderSmall_Icon
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 1402
+        width: 274
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PinkBarSmall_Icon
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1295
+        width: 125
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BoarderLarge_Icon
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 1106
+        width: 368
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueBarLarge_Icon
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1080
+        width: 337
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GameTitle_Icon
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 547
+        width: 1725
+        height: 477
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AimReticleBlueMidRing_Icon
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 584
+        width: 158
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AlternatePlayerPendingWin_Icon
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 71
+        width: 395
+        height: 394
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueCircleOpen_Icon
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 72
+        width: 373
+        height: 372
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PinkCircleFull_Icon
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 66
+        width: 373
+        height: 372
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AimReticlePink_Icon
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1061
+        width: 244
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayerOneWin_Icon
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1616
+        width: 497
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayerTwoWin_Icon
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1617
+        width: 518
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayerPendingWin_Icon
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1611
+        width: 397
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayerDraw_Icons
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 1614
+        width: 424
+        height: 421
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AimReticleBlueOuterRing_Icon
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 802
+        width: 207
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AimReticleBlueInnerRing_Icon
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 732
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 2, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoundedBlueBox_Icon
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1337
+        width: 263
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
