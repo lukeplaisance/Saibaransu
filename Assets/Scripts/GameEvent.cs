@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[CreateAssetMenu]
 public class GameEvent : ScriptableObject
 {
     private List<GameEventListener> listeners = new List<GameEventListener>();
@@ -11,7 +13,7 @@ public class GameEvent : ScriptableObject
         listeners.Add(listener);
     }
 
-    public void UnScubsribe(GameEventListener listener)
+    public void UnSubscribe(GameEventListener listener)
     {
         listeners.Remove(listener);
     }
