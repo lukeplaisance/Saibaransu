@@ -1,22 +1,38 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Assertions.Comparers;
 
-public class TimeManager : MonoBehaviour
+public class TimeManagerBehaviour : MonoBehaviour
 {
+    public float slowDownDuration = 2f;
+    public AnimationCurve ac;
+    public float currentTime = 0;
 
-    public float slowdownAmount = 0.05f;
-    public float slowndownLength = 2f;
-
+    public bool IsSlowDown;
     private void Update()
     {
-        Time.timeScale += (1f / slowndownLength) * Time.unscaledDeltaTime;
-        Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
+        if (currentTime >= slowDownDuration)
+        {
+            ResetSlowDown();
+            return;
+        }
+
+        if (IsSlowDown)
+        {
+            Time.timeScale = ac.Evaluate(currentTime / slowDownDuration);
+            currentTime += Time.unscaledDeltaTime;
+        }
     }
 
     public void SlowDown()
     {
-        Time.timeScale = slowdownAmount;
-        Time.fixedDeltaTime = Time.timeScale * 0.02f;
+        currentTime = 0;
+        IsSlowDown = true;
+    }
+
+    public void ResetSlowDown()
+    {
+        currentTime = 0;
+        Time.timeScale = 1;
+        IsSlowDown = false;
     }
 }
