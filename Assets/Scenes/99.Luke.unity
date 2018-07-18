@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: {fileID: 11400000, guid: dc11ba052d94d1b4982c14dc590423ff, type: 2}
+  Notes: 
   Response:
     m_PersistentCalls:
       m_Calls: []
@@ -158,7 +159,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &52427761
 Prefab:
@@ -169,35 +170,35 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -20
+      value: -19
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 20
+      value: 20.28
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -250
+      value: -700.28
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1534041504019500, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_Name
@@ -231,6 +232,18 @@ Prefab:
       propertyPath: m_TagString
       value: Player2
       objectReference: {fileID: 0}
+    - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
   m_IsPrefabParent: 0
@@ -243,35 +256,35 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -20
+      value: -19
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 20
+      value: 20.28
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -950
+      value: -500.28003
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
-      propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1534041504019500, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_Name
@@ -321,15 +334,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 54789866877860992, guid: d6a30ec8b56cde743ac4864846a5f8c9,
         type: 2}
@@ -394,6 +407,11 @@ Prefab:
       propertyPath: m_TagString
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 114420385587628888, guid: d6a30ec8b56cde743ac4864846a5f8c9,
+        type: 2}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
   m_IsPrefabParent: 0
@@ -426,6 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: {fileID: 11400000, guid: 05e3f979cd6a8994a8a951b8fddd5df0, type: 2}
+  Notes: 
   Response:
     m_PersistentCalls:
       m_Calls:
@@ -461,12 +480,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 162826149}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: -20, y: 20, z: -250}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &200946393
 GameObject:
@@ -635,7 +654,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!81 &434145677
 AudioListener:
@@ -702,7 +721,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &714654495
 Prefab:
@@ -767,6 +786,7 @@ GameObject:
   m_Component:
   - component: {fileID: 851397069}
   - component: {fileID: 851397068}
+  - component: {fileID: 851397070}
   m_Layer: 0
   m_Name: -RUNTIME
   m_TagString: Untagged
@@ -786,12 +806,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: {fileID: 11400000, guid: 2bde347a67fcd4c4e8fee89decf81139, type: 2}
+  Notes: 
   Response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 434145680}
         m_MethodName: SlowDown
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1338629067}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -813,8 +845,37 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &851397070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 851397067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d873a0f29ea1d47aa47305f50b4201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 11c58508458619441881ce6f84bc4a81, type: 2}
+  Notes: 
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 434145680}
+        m_MethodName: ResetSlowDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1012862481
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,6 +985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: {fileID: 11400000, guid: 2bde347a67fcd4c4e8fee89decf81139, type: 2}
+  Notes: 
   Response:
     m_PersistentCalls:
       m_Calls:
@@ -951,7 +1013,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1028614281
 GameObject:
@@ -979,7 +1041,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1338629067
 GameObject:
@@ -992,6 +1054,7 @@ GameObject:
   - component: {fileID: 1338629068}
   - component: {fileID: 1338629071}
   - component: {fileID: 1338629070}
+  - component: {fileID: 1338629072}
   m_Layer: 0
   m_Name: CollisionArea
   m_TagString: MiddleArea
@@ -1009,8 +1072,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.86975247, y: 7.416256, z: 1.3492303}
-  m_Center: {x: 0.009479682, y: 3.208128, z: 0.009493383}
+  m_Size: {x: 50, y: 50, z: 25}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1338629069
 Transform:
   m_ObjectHideFlags: 0
@@ -1019,7 +1082,7 @@ Transform:
   m_GameObject: {fileID: 1338629067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -19, y: 20.28, z: -600.28}
-  m_LocalScale: {x: 60, y: 1, z: 45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1052,6 +1115,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1338629072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1338629067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfb8733884518224eab218c1936a92a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 2bde347a67fcd4c4e8fee89decf81139, type: 2}
+  colliderTag: Player2
 --- !u!1 &1534948550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,6 +1156,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: {fileID: 11400000, guid: bff93f978457eae489b0dcbd69cdf99a, type: 2}
+  Notes: 'What it Does:: RoundBegin will setup all the players and the collision volume
+
+    When it is Raised:: is raised from the RestartTriggerVolumes and the GameStart'
   Response:
     m_PersistentCalls:
       m_Calls:
@@ -1127,6 +1206,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1338629067}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!4 &1534948552
@@ -1140,7 +1230,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1630527253
 GameObject:
@@ -1171,6 +1261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: {fileID: 11400000, guid: 05e3f979cd6a8994a8a951b8fddd5df0, type: 2}
+  Notes: 
   Response:
     m_PersistentCalls:
       m_Calls:
@@ -1206,12 +1297,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1630527253}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: 20, z: -250}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -20, y: 20, z: -950}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1686752792
 GameObject:
@@ -1241,6 +1332,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: {fileID: 11400000, guid: a3f2dae3601358e458d89a9cc811af79, type: 2}
+  Notes: 'When the round ends we restart the round by raising the begin round event
+
+    RoundEnd is raised from the RestartTriggerVolumes
+
+'
   Response:
     m_PersistentCalls:
       m_Calls:
@@ -1268,7 +1364,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1691694966 stripped
 MonoBehaviour:
@@ -1302,13 +1398,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1759667871}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20, y: 20, z: -950}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -19, y: 20.28, z: -500.28003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1811676686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,44 +1504,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: {fileID: 11400000, guid: 05e3f979cd6a8994a8a951b8fddd5df0, type: 2}
+  Notes: 'start the round
+
+'
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1630527255}
-        m_MethodName: Teleport
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 162826151}
-        m_MethodName: Teleport
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2028046168}
-        m_MethodName: ResetVelocity
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1691694966}
-        m_MethodName: ResetVelocity
+      - m_Target: {fileID: 11400000, guid: bff93f978457eae489b0dcbd69cdf99a, type: 2}
+        m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1468,7 +1534,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2028046168 stripped
 MonoBehaviour:
@@ -1502,10 +1568,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2146591039}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -20, y: 20, z: -250}
-  m_LocalScale: {x: 1.5000007, y: 1.5, z: 1.5000007}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19, y: 20.28, z: -700.28}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
