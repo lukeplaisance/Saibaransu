@@ -1268,6 +1268,7 @@ GameObject:
   - component: {fileID: 114569349976253196}
   - component: {fileID: 114007000359827580}
   - component: {fileID: 114024914098045198}
+  - component: {fileID: 114862702259644966}
   m_Layer: 0
   m_Name: Bike
   m_TagString: Player1
@@ -3982,7 +3983,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1144442507049034}
-  m_LocalRotation: {x: -0.6589318, y: 0.21443467, z: -0.50385815, w: 0.5157069}
+  m_LocalRotation: {x: -0.6589318, y: 0.21443465, z: -0.50385815, w: 0.5157069}
   m_LocalPosition: {x: 0.062981375, y: 0.012040812, z: 0.08783107}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4743,6 +4744,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: New Text
+--- !u!114 &114862702259644966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1534041504019500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dd6210b2e4679d4e9d9ed5b1ae2fcd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  config: {fileID: 11400000, guid: 27f3fe3278d5bae48909b6f233b36cbc, type: 2}
+  _player: {fileID: 4289367395491484}
+  _rotationSpeed: 10
+  _camera: {fileID: 20405285938352956}
 --- !u!124 &124713131063885806
 Behaviour:
   m_ObjectHideFlags: 1
