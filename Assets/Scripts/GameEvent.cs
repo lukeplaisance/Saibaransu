@@ -1,5 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif  
 using UnityEngine;
 
 
@@ -20,9 +23,26 @@ public class GameEvent : ScriptableObject
 
     public void Raise()
     {
-        for(int i = listeners.Count - 1; i >= 0; i--)
+        for (int i = listeners.Count - 1; i >= 0; i--)
         {
             listeners[i].OnEventRaised();
         }
     }
 }
+
+#if UNITY_EDITOR
+
+[CustomEditor(typeof(GameEvent))]
+public class GameEventEditor : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        base.OnInspectorGUI();
+        if (GUILayout.Button("RaiseEvent"))
+        {
+            var mt = target as GameEvent;
+            mt.Raise();
+        }
+    }
+}
+#endif

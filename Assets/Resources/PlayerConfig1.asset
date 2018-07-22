@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a1a8e8c05802d4e9bea8d1ba5558db, type: 3}
+  m_Name: PlayerConfig1
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerConfig
+  _horizontalinput: P1Horizontal
+  _verticalinput: P1Vertical
+  _fireinput1: P1Fire1
+  _fireinput2: P1Fire2
+  InputFire1: {fileID: 11400000, guid: bf478ac0b275f714db09be612acabdfb, type: 2}
+  InputFire2: {fileID: 11400000, guid: 08803c373a0583c4fb8a94776451c9bd, type: 2}
+  OnFirstPersonSwitch: {fileID: 11400000, guid: ce9e4526cc644074c87a73fcb4d909da,
+    type: 2}
