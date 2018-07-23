@@ -9,7 +9,8 @@ public class ReticleBehaviour : MonoBehaviour
     private bool fired;
     private bool active;
     public Image image;
-    public GameEvent onPlayerRayHit;
+    public GameEvent onPlayerRayHitHead;
+    public GameEvent onPlayerRayHitBody;
     void Start()
     {
         ray = new Ray();
@@ -36,7 +37,14 @@ public class ReticleBehaviour : MonoBehaviour
             if (hit.collider)
             {
                 Debug.Log("Ray hit " + hit.collider.name);
-                onPlayerRayHit.Raise();
+                if(hit.collider.CompareTag("P1Head"))
+                {
+                    onPlayerRayHitHead.Raise();
+                }
+                if (hit.collider.CompareTag("P1Body"))
+                {
+                    onPlayerRayHitBody.Raise();
+                }
             }
             else
             {
