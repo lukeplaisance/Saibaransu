@@ -9,7 +9,8 @@ public class ReticleBehaviour : MonoBehaviour
     private bool fired;
     private bool active;
     public Image image;
-    public GameEvent onPlayerRayHit;
+    public GameEvent onPlayerRayHitHead;
+    public GameEvent onPlayerRayHitBody;
     void Start()
     {
         ray = new Ray();
@@ -28,23 +29,30 @@ public class ReticleBehaviour : MonoBehaviour
     {
         if (!aiming)
             return;
-        if (!fired)
+        fired = true;
+        ray = new Ray(gameObject.transform.position, gameObject.transform.forward);
+        Debug.DrawRay(ray.origin, transform.forward * 999, Color.green, 5.0f);
+        if (Physics.Raycast(ray, out hit))
         {
-            fired = true;
-            ray = new Ray(gameObject.transform.position, gameObject.transform.forward);
-            Debug.DrawRay(ray.origin, transform.forward * 999, Color.green, 5.0f);
-            if (Physics.Raycast(ray, out hit))
+            if (hit.collider)
             {
-                if (hit.collider)
+                Debug.Log("Ray hit " + hit.collider.name);
+                if(hit.collider.CompareTag("P1Head"))
                 {
-                    Debug.Log("Ray hit " + hit.collider.name);
-                    onPlayerRayHit.Raise();
+                    onPlayerRayHitHead.Raise();
                 }
-                else
+                if (hit.collider.CompareTag("P1Body"))
                 {
-                    Debug.Log("Attack Missed");
+                    onPlayerRayHitBody.Raise();
                 }
+            }
+            else
+            {
+                Debug.Log("Attack Missed");
             }
         }
     }
+
+    //todo: move this out of update and listen for what a p1fire1 input means
+
 }
