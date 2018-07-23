@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/99.Luke.unity
     guid: bae8c227b1067a145a2ca8ffa7fe6079
+  - enabled: 1
+    path: Assets/Scenes/97.Dylan.unity
+    guid: 329d853577385d4449477e6b9b5ae5df
