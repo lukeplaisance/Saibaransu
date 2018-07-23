@@ -1,15 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PointSystemBehaviour : MonoBehaviour
 {
     [SerializeField]
     private List<int> pointsList = new List<int>();
     [SerializeField]
-    //private GameEvent gameEvent;
+    private GameEvent gameEvent;
     public Text scoreTotalText;
     public Text currentRoundText;
     private int totalRounds = 3;
@@ -37,13 +37,10 @@ public class PointSystemBehaviour : MonoBehaviour
 
     public void IncrementRound()
     {
-        for (int i = 0; i < totalRounds; i++)
+        currentRound++;
+        if (currentRound >= 4)
         {
-            currentRound++;
-            if(currentRound >= totalRounds)
-            {
-                currentRound = 0;
-            }
+            SceneManager.LoadScene("GameEnd");
         }
     }
 
