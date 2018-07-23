@@ -293,7 +293,7 @@ Prefab:
     - target: {fileID: 114791957456506678, guid: d6a30ec8b56cde743ac4864846a5f8c9,
         type: 2}
       propertyPath: m_Text
-      value: 'Round:'
+      value: 'Round: 1'
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalPosition.y
@@ -520,7 +520,7 @@ MonoBehaviour:
     m_LineSpacing: 0.9
   m_Text: 'Scores
 
-    R1:'
+    R1: 0'
 --- !u!222 &687846982
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -581,12 +581,101 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11a7d06f4c3bca9428bf0d83e22b5e78, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &843470314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 843470318}
+  - component: {fileID: 843470317}
+  - component: {fileID: 843470316}
+  - component: {fileID: 843470315}
+  m_Layer: 0
+  m_Name: P1Head
+  m_TagString: P1Head
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &843470315
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 843470314}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &843470316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 843470314}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &843470317
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 843470314}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &843470318
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 843470314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -29.3, y: 31.92, z: -742.7}
+  m_LocalScale: {x: 19.480001, y: 19.479979, z: 19.479979}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &879286078 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114263387433526994, guid: aa4ab498d2575384fa717c014151334a,
     type: 2}
   m_PrefabInternal: {fileID: 105034640}
   m_Script: {fileID: 11500000, guid: 7b80740288d928145941d16e125d41f4, type: 3}
+--- !u!1 &1020836667 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1367725165020084, guid: aa4ab498d2575384fa717c014151334a,
+    type: 2}
+  m_PrefabInternal: {fileID: 105034640}
 --- !u!1 &1338629067
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,47 +831,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22d873a0f29ea1d47aa47305f50b4201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 0}
-  Notes: Updates the UI text when a new round begins to show the previous round's
-    score.
+  Event: {fileID: 11400000, guid: a3f2dae3601358e458d89a9cc811af79, type: 2}
+  Notes: Updates the UI text when a round ends to show the score for that round and
+    the total score of all the rounds.
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1893316099}
+        m_MethodName: updateRoundScoreText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &1893316097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1893316094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22d873a0f29ea1d47aa47305f50b4201, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 0}
-  Notes: Updates the UI text when the player's score changes
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1893316099}
+        m_MethodName: UpdateTotalScoreText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -831,9 +902,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RoundScores: 
+  roundNum: 0
   RoundScoreText: {fileID: 687846981}
   RoundNumberText: {fileID: 291539554}
   TotalScoreText: {fileID: 1999213985}
+  pointSystem: {fileID: 1020836667}
 --- !u!1 &1999213983
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,7 +974,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Total\n    Score:"
+  m_Text: "Total\n    Score: 0"
 --- !u!222 &1999213986
 CanvasRenderer:
   m_ObjectHideFlags: 0
