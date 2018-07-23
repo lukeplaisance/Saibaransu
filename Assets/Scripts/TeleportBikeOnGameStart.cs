@@ -14,6 +14,7 @@ public class TeleportBikeOnGameStart : MonoBehaviour
     {
         BikeTransform.position = TeleportTransform.position;
         BikeTransform.rotation = TeleportTransform.rotation;
+        BikeTransform.GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
 }
 
