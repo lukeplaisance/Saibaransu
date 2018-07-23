@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 65721970342586370}
   - component: {fileID: 114975833335174908}
   - component: {fileID: 114755046411914054}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CollisionArea
   m_TagString: MiddleArea
   m_Icon: {fileID: 0}

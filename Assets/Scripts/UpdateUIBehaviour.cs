@@ -38,17 +38,21 @@ public class UpdateUIBehaviour : MonoBehaviour
         RoundNumberText.text = "Round: " + roundNum;
     }
 
-    int round2Score = 0;
+    private int round1Score = 0;
+    private int round2Score = 0;
 
     public void updateRoundScoreText()
     {
+        if (roundNum == 1)
+        {
+            round1Score = playerScore.currentRoundScore;
+        }
         Debug.Log("update score event");
         RoundScores.Add(playerScore.currentRoundScore);
-        RoundScoreText.text = "Scores\n" + "R1: " + playerScore.currentRoundScore + "\t";
+        RoundScoreText.text = "Scores\n" + "R1: " + round1Score + "\t";
         if (roundNum == 2)
         {
             RoundScoreText.text += "R2: " + playerScore.currentRoundScore + "\t";
-            Debug.Log("Current score" + playerScore.currentRoundScore);
             round2Score = playerScore.currentRoundScore;
         }
 

@@ -29,26 +29,31 @@ public class ReticleBehaviour : MonoBehaviour
     {
         if (!aiming)
             return;
-        fired = true;
-        ray = new Ray(gameObject.transform.position, gameObject.transform.forward);
-        Debug.DrawRay(ray.origin, transform.forward * 999, Color.green, 5.0f);
-        if (Physics.Raycast(ray, out hit))
+        if (!fired)
         {
-            if (hit.collider)
+            Debug.Log(fired);
+            fired = true;
+            ray = new Ray(gameObject.transform.position, gameObject.transform.forward);
+            Debug.DrawRay(ray.origin, transform.forward * 999, Color.green, 5.0f);
+            if (Physics.Raycast(ray, out hit))
             {
-                Debug.Log("Ray hit " + hit.collider.name);
-                if(hit.collider.CompareTag("P1Head"))
+                if (hit.collider)
                 {
-                    onPlayerRayHitHead.Raise();
+                    Debug.Log("Ray hit " + hit.collider.name);
+                    if (hit.collider.CompareTag("P1Head"))
+                    {
+                        onPlayerRayHitHead.Raise();
+                    }
+
+                    if (hit.collider.CompareTag("P1Body"))
+                    {
+                        onPlayerRayHitBody.Raise();
+                    }
                 }
-                if (hit.collider.CompareTag("P1Body"))
+                else
                 {
-                    onPlayerRayHitBody.Raise();
+                    Debug.Log("Attack Missed");
                 }
-            }
-            else
-            {
-                Debug.Log("Attack Missed");
             }
         }
     }
