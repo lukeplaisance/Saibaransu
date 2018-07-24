@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b80740288d928145941d16e125d41f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsList: 
+  pointsList: 32000000320000003200000032000000
   PointUpdate: {fileID: 11400000, guid: c76be9b07111d944cada5609e09b4713, type: 2}
   currentRound: 0
-  currentRoundScore: 0
+  scores: {fileID: 11400000, guid: 3e1889efbcdd659468b43194966bc56d, type: 2}

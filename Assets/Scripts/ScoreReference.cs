@@ -5,10 +5,17 @@ using System;
 
 
 
-    [CreateAssetMenu]
-    public class ScoreReference : ScriptableObject
+[CreateAssetMenu]
+public class ScoreReference : ScriptableObject
+{
+    public List<int> Scores;
+    public int CurrentRoundScore;
+    public int TotalScore;
+
+    public void Reset()
     {
-        public List<int> Scores;
-        public int CurrentRoundScore;
-        public int TotalScore;
+        Scores = new List<int>();
+        CurrentRoundScore = 0;
+        TotalScore = 0;
     }
+}

@@ -12,15 +12,19 @@ public class PointSystemBehaviour : MonoBehaviour
     private GameEvent PointUpdate;    
     private int totalRounds = 3;
     public int currentRound = 1;
-    private int ScoreToWin = 50;
-    private int totalScore;
-    public int currentRoundScore;
+    public ScoreReference scores;
+
+    private void Awake()
+    {
+        scores.Reset();
+    }
 
     public void AddPoints(int point)
     {
         pointsList.Add(point);
         SetTotalScore();
-        currentRoundScore = point;
+        scores.CurrentRoundScore = point;
+        scores.Scores.Add(point);
         PointUpdate.Raise();
     }
 
@@ -31,13 +35,13 @@ public class PointSystemBehaviour : MonoBehaviour
 
     public void SetTotalScore()
     {
-        totalScore = pointsList.Sum();        
+        scores.TotalScore = scores.Scores.Sum();
     }
 
     public void IncrementRound()
     {        
         currentRound++;
-        currentRoundScore = 0;
+        scores.CurrentRoundScore = 0;
         if (currentRound >= 4)
         {
             SceneManager.LoadScene("3.GameOver");

@@ -21,7 +21,7 @@ public class UpdateUIBehaviour : MonoBehaviour
     private PointSystemBehaviour playerScore;
 
 
-    void Start ()
+    void Awake()
 	{
 	    playerScore = pointSystem.GetComponent<PointSystemBehaviour>();	    
 	}
@@ -38,20 +38,20 @@ public class UpdateUIBehaviour : MonoBehaviour
     {
         if (playerScore.currentRound == 1)
         {
-            round1Score = playerScore.currentRoundScore;
+            round1Score = playerScore.scores.CurrentRoundScore;
         }
         Debug.Log("update score event");
-        RoundScores.Add(playerScore.currentRoundScore);
-        RoundScoresDisplay[0].text = "R1: " + playerScore.currentRoundScore;
+        RoundScores.Add(playerScore.scores.CurrentRoundScore);
+        RoundScoresDisplay[0].text = "R1: " + playerScore.scores.CurrentRoundScore;
         if (playerScore.currentRound == 2)
         {
-            RoundScoresDisplay[1].text = "R3: " + playerScore.currentRoundScore;
-            round2Score = playerScore.currentRoundScore;
+            RoundScoresDisplay[1].text = "R3: " + playerScore.scores.CurrentRoundScore;
+            round2Score = playerScore.scores.CurrentRoundScore;
         }
 
         if (playerScore.currentRound == 3)
         {
-            RoundScoresDisplay[2].text = "R3: " + playerScore.currentRoundScore;
+            RoundScoresDisplay[2].text = "R3: " + playerScore.scores.CurrentRoundScore;
         }
 
     }
