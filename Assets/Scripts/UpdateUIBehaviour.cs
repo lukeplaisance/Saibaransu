@@ -37,21 +37,21 @@ public class UpdateUIBehaviour : MonoBehaviour
     {
         if (playerScore.currentRound == 1)
         {
-            round1Score = playerScore.currentRoundScore;
+            round1Score = playerScore.highScore.CurrentRoundScore;
         }
         Debug.Log("update score event");
-        RoundScores.Add(playerScore.currentRoundScore);
+        RoundScores.Add(playerScore.highScore.CurrentRoundScore);
         RoundScoreText.text = "Scores\n" + "R1: " + round1Score + "\t";
         if (playerScore.currentRound == 2)
         {
-            RoundScoreText.text += "R2: " + playerScore.currentRoundScore + "\t";
-            round2Score = playerScore.currentRoundScore;
+            RoundScoreText.text += "R2: " + playerScore.highScore.CurrentRoundScore + "\t";
+            round2Score = playerScore.highScore.CurrentRoundScore; ;
         }
 
         if (playerScore.currentRound == 3)
         {
             RoundScoreText.text += "R2: " + round2Score + "\t";
-            RoundScoreText.text += "R3: " + playerScore.currentRoundScore;
+            RoundScoreText.text += "R3: " + playerScore.highScore.CurrentRoundScore;
         }
 
     }
