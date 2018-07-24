@@ -9,49 +9,38 @@ public class PointSystemBehaviour : MonoBehaviour
     [SerializeField]
     private List<int> pointsList = new List<int>();
     [SerializeField]
-    private GameEvent gameEvent;
-    public Text scoreTotalText;
-    public Text currentRoundText;
+    private GameEvent PointUpdate;    
     private int totalRounds = 3;
-    private int currentRound = 0;
+    public int currentRound = 1;
     private int ScoreToWin = 50;
     private int totalScore;
+    public int currentRoundScore;
 
     public void AddPoints(int point)
     {
         pointsList.Add(point);
         SetTotalScore();
+        currentRoundScore = point;
+        PointUpdate.Raise();
     }
 
     public void SetCurrentRound()
     {
-        IncrementRound();
-        currentRoundText.text = "Round: " + currentRound.ToString();
+        IncrementRound();        
     }
 
     public void SetTotalScore()
     {
-        totalScore = pointsList.Sum();
-        scoreTotalText.text = "Total Score: " + totalScore.ToString();
+        totalScore = pointsList.Sum();        
     }
 
     public void IncrementRound()
-    {
+    {        
         currentRound++;
+        currentRoundScore = 0;
         if (currentRound >= 4)
         {
-            SceneManager.LoadScene("GameEnd");
+            SceneManager.LoadScene("3.GameOver");
         }
     }
-
-    //public void CheckForWinner()
-    //{
-    //    for(int i = 0; i < ScoreToWin; i++)
-    //    {
-    //        if(totalScore == ScoreToWin)
-    //        {
-                
-    //        }
-    //    }
-    //}
 }

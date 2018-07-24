@@ -1,4 +1,5 @@
-﻿
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,7 +7,9 @@ public class ReticleBehaviour : MonoBehaviour
 {
     private RaycastHit hit;
     private Ray ray;
+    [SerializeField]
     private bool fired;
+    [SerializeField]
     private bool active;
     public Image image;
     public GameEvent onPlayerRayHitHead;
@@ -31,6 +34,7 @@ public class ReticleBehaviour : MonoBehaviour
             return;
         if (!fired)
         {
+            StartCoroutine(ResetAttack());
             Debug.Log(fired);
             fired = true;
             ray = new Ray(gameObject.transform.position, gameObject.transform.forward);
@@ -59,5 +63,14 @@ public class ReticleBehaviour : MonoBehaviour
     }
 
     //todo: move this out of update and listen for what a p1fire1 input means
-
+    IEnumerator ResetAttack()
+    {
+        while(true)
+        {
+            yield return new WaitForSeconds(3.0f);
+            fired = false;
+            break;
+        }
+        StopAllCoroutines();
+    }
 }
