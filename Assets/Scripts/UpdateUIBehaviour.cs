@@ -14,6 +14,7 @@ public class UpdateUIBehaviour : MonoBehaviour
     public Text RoundNumberText;
 
     public Text TotalScoreText;
+    public List<Text> RoundScoresDisplay;
 
     public GameObject pointSystem;
 
@@ -27,7 +28,7 @@ public class UpdateUIBehaviour : MonoBehaviour
 
     public void UpdateRoundNumberText()
     {
-        RoundNumberText.text = "Round: " + playerScore.currentRound;
+        RoundNumberText.text = playerScore.currentRound.ToString();
     }
 
     private int round1Score = 0;
@@ -41,17 +42,16 @@ public class UpdateUIBehaviour : MonoBehaviour
         }
         Debug.Log("update score event");
         RoundScores.Add(playerScore.currentRoundScore);
-        RoundScoreText.text = "Scores\n" + "R1: " + round1Score + "\t";
+        RoundScoresDisplay[0].text = "R1: " + playerScore.currentRoundScore;
         if (playerScore.currentRound == 2)
         {
-            RoundScoreText.text += "R2: " + playerScore.currentRoundScore + "\t";
+            RoundScoresDisplay[1].text = "R3: " + playerScore.currentRoundScore;
             round2Score = playerScore.currentRoundScore;
         }
 
         if (playerScore.currentRound == 3)
         {
-            RoundScoreText.text += "R2: " + round2Score + "\t";
-            RoundScoreText.text += "R3: " + playerScore.currentRoundScore;
+            RoundScoresDisplay[2].text = "R3: " + playerScore.currentRoundScore;
         }
 
     }
@@ -64,6 +64,6 @@ public class UpdateUIBehaviour : MonoBehaviour
             total += score;
         }
 
-        TotalScoreText.text = "Total\n    Score: " + total;
+        TotalScoreText.text = "Score: " + total;
     }
 }

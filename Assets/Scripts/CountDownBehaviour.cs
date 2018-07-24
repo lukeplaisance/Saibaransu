@@ -8,7 +8,7 @@ public class CountDownBehaviour : MonoBehaviour
     public float StartTime = 3;
     public float timer = 3;
     public GameObject Bike;
-    public Text CountDown;
+    public Text CountDown;    
 
     public void Start()
     {
@@ -19,7 +19,7 @@ public class CountDownBehaviour : MonoBehaviour
     {
         timer = StartTime;
         Bike.GetComponent<BikeMovementBehaviour>().enabled = false;
-        CountDown.enabled = true;
+        CountDown.gameObject.SetActive(true);
     }
 
     private void Update()
@@ -30,7 +30,7 @@ public class CountDownBehaviour : MonoBehaviour
         if(timer < 0)
         {
             Bike.GetComponent<BikeMovementBehaviour>().enabled = true;
-            CountDown.enabled = false;
+            CountDown.gameObject.SetActive(false);
         }
     }
 }
