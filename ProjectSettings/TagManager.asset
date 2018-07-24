@@ -8,6 +8,10 @@ TagManager:
   - Player2
   - MiddleArea
   - HeadArea
+  - P1Head
+  - P1Body
+  - P2Head
+  - P2Body
   layers:
   - Default
   - TransparentFX
