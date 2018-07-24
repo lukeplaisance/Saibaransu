@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogColor: {r: 1, g: 0.76470596, b: 0.72156864, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 1a15a2b4915b66f49b29d5e602f2f1d9, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: af461b9a62c270245b0d049f0bd306a0, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -422,6 +422,7 @@ GameObject:
   - component: {fileID: 414195436}
   - component: {fileID: 414195434}
   - component: {fileID: 414195433}
+  - component: {fileID: 414195437}
   m_Layer: 0
   m_Name: bodyCube
   m_TagString: P1Body
@@ -521,6 +522,35 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &414195437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 414195432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d873a0f29ea1d47aa47305f50b4201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 2275042bd12319c43ac686f5bd2d4b3f, type: 2}
+  Notes: 
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1786758127}
+        m_MethodName: AddPoints
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!33 &414195438
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -535,7 +565,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 414195432}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.03, y: 21.24, z: -594.2}
+  m_LocalPosition: {x: -24.03, y: 21.24, z: -610.04}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1301,7 +1331,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1630527253}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20, y: 20, z: -950}
+  m_LocalPosition: {x: -20, y: 20, z: -250}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1759667872}
@@ -1398,7 +1428,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1759667871}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 1, y: 0.2800007, z: 449.71997}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1630527256}
@@ -1564,11 +1594,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 20.28
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -500.28003
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 4289367395491484, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1590,24 +1620,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114124951810064652, guid: d6a30ec8b56cde743ac4864846a5f8c9,
-        type: 2}
-      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1786758127}
-    - target: {fileID: 114383803827852894, guid: d6a30ec8b56cde743ac4864846a5f8c9,
-        type: 2}
-      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1786758127}
     - target: {fileID: 114990434916127194, guid: d6a30ec8b56cde743ac4864846a5f8c9,
         type: 2}
       propertyPath: pointSystem
       value: 
       objectReference: {fileID: 1786758126}
-    m_RemovedComponents:
-    - {fileID: 114383803827852894, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
-    - {fileID: 114124951810064652, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
+    - target: {fileID: 224810199601951644, guid: d6a30ec8b56cde743ac4864846a5f8c9,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224810199601951644, guid: d6a30ec8b56cde743ac4864846a5f8c9,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -22.7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6a30ec8b56cde743ac4864846a5f8c9, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &2121052405
@@ -1623,6 +1651,7 @@ GameObject:
   - component: {fileID: 2121052408}
   - component: {fileID: 2121052407}
   - component: {fileID: 2121052406}
+  - component: {fileID: 2121052412}
   m_Layer: 0
   m_Name: headCube
   m_TagString: P1Head
@@ -1736,12 +1765,41 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2121052405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.03, y: 24.41, z: -594.2}
+  m_LocalPosition: {x: -24.03, y: 24.41, z: -610.04}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2121052412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2121052405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d873a0f29ea1d47aa47305f50b4201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 2275042bd12319c43ac686f5bd2d4b3f, type: 2}
+  Notes: 
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1786758127}
+        m_MethodName: AddPoints
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &2146591039
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ public class ReticleBehaviour : MonoBehaviour
     public Image image;
     public GameEvent onPlayerRayHitHead;
     public GameEvent onPlayerRayHitBody;
+    public GameEvent OnPlayerMissed;
     void Start()
     {
         ray = new Ray();
@@ -57,6 +58,7 @@ public class ReticleBehaviour : MonoBehaviour
                 else
                 {
                     Debug.Log("Attack Missed");
+                    OnPlayerMissed.Raise();
                 }
             }
         }
